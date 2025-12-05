@@ -1,10 +1,12 @@
 import { Button } from "./ui/button";
-import { Download } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import profileImage from "figma:asset/079a5ae85af47858c842561f3f758c9345067381.png";
 
 export function Hero() {
+  const navigate = useNavigate();
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -100,10 +102,11 @@ export function Hero() {
             >
               <Button
                 size="lg"
+                onClick={() => navigate('/contact')}
                 className="bg-[#FFE500] hover:bg-[#FFD700] text-black px-6 py-6 rounded-[341px] text-sm sm:text-base"
               >
-                <Download size={18} className="mr-2" />
-                Download CV
+                <Calendar size={18} className="mr-2" />
+                Book Consultation
               </Button>
             </motion.div>
           </motion.div>
