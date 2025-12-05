@@ -1,31 +1,22 @@
 import { motion, useScroll, useTransform } from "motion/react";
-import { Briefcase, Calendar, MapPin } from "lucide-react";
+import { Briefcase, Calendar, MapPin, ExternalLink } from "lucide-react";
 import { useRef } from "react";
 
 export function Experience() {
   const experiences = [
-    {
-      role: "Digital Marketing Specialist",
-      company: "APIMS TEC",
-      location: "Pakistan",
+     {
+      role: "Founder & CEO",
+      company: "Real Landing",
+      location: "Remote",
       type: "Full-time",
+      url: "https://reallanding.com/",
       responsibilities: [
-        "Developing and executing comprehensive digital marketing strategies",
-        "Managing social media campaigns across multiple platforms",
-        "Optimizing Facebook and Google Ads for maximum ROI",
-        "Analyzing performance metrics and providing actionable insights",
-      ],
-    },
-    {
-      role: "Digital Marketing Manager",
-      company: "ZAHA GLOBAL",
-      location: "Germany",
-      type: "Full-time",
-      responsibilities: [
-        "Leading digital marketing initiatives for international markets",
-        "Developing global marketing strategies and campaigns",
-        "Managing cross-functional teams and coordinating with stakeholders",
-        "Driving brand visibility and engagement across digital channels",
+        "Founded and lead a comprehensive real estate services platform",
+        "Developing innovative digital solutions for property management and real estate transactions",
+        "Building strategic partnerships with real estate agents, property developers, and investors",
+        "Overseeing business operations, team management, and company growth strategies",
+        "Implementing cutting-edge technology to streamline real estate processes",
+        "Managing client relationships and ensuring exceptional service delivery",
       ],
     },
     {
@@ -33,6 +24,7 @@ export function Experience() {
       company: "Gen Z Scent",
       location: "Multan, Punjab, Pakistan",
       type: "Full-time",
+      url: "https://genzscent.com/",
       responsibilities: [
         "Founded modern fragrance brand offering premium fragrances tailored to every mood",
         "Managing e-commerce operations through www.genzscent.com",
@@ -41,22 +33,52 @@ export function Experience() {
       ],
     },
     {
-      role: "Finance Department Intern",
-      company: "MEPCO",
-      location: "Multan, Punjab, Pakistan",
-      type: "Internship",
+      role: "Performance Marketer",
+      company: "VioFlare",
+      location: "Remote",
+      type: "Full-time",
+      url: "https://vioflare.com/",
       responsibilities: [
-        "Assisted with financial analysis and reporting",
-        "Supported day-to-day finance department operations",
-        "Gained experience in financial management processes",
-        "Collaborated with team members on various projects",
+        "Developing and executing comprehensive digital marketing strategies",
+        "Managing social media campaigns across multiple platforms",
+        "Optimizing Facebook and Google Ads for maximum ROI",
+        "Analyzing performance metrics and providing actionable insights",
       ],
     },
+    {
+      role: "Senior Digital Marketer",
+      company: "Zaha Global",
+      location: "Germany",
+      type: "Full-time",
+      url: "https://zahaglobal.co/",
+      responsibilities: [
+        "Leading digital marketing initiatives for international markets",
+        "Developing global marketing strategies and campaigns",
+        "Managing cross-functional teams and coordinating with stakeholders",
+        "Driving brand visibility and engagement across digital channels",
+      ],
+    },
+    
+    {
+      role: "Digital Marketing Specialist",
+      company: "NetOPZ",
+      location: "Remote",
+      type: "Full-time",
+      url: "https://netopz.com/",
+      responsibilities: [
+        "Developed and executed comprehensive digital marketing campaigns",
+        "Managed social media presence and content strategy",
+        "Optimized online advertising campaigns for maximum performance",
+        "Analyzed marketing metrics and provided data-driven insights",
+      ],
+    },
+    
     {
       role: "Social Media Marketing Manager",
       company: "ICMA Pakistan",
       location: "Pakistan",
       type: "Full-time",
+      url: "https://www.icmap.com.pk/multan.aspx/",
       responsibilities: [
         "Managed social media presence and content strategy",
         "Created engaging content to drive audience engagement",
@@ -69,6 +91,7 @@ export function Experience() {
       company: "CorbitSoft PVT LTD.",
       location: "Remote",
       type: "Full-time",
+      url: "https://corbitsoft.com/",
       responsibilities: [
         "Developed and executed digital marketing campaigns",
         "Managed Facebook and Google Ads accounts",
@@ -81,11 +104,25 @@ export function Experience() {
       company: "Codexcel",
       location: "Remote",
       type: "Full-time",
+      url: "https://codexcel.org/",
       responsibilities: [
         "Managed social media accounts and content calendars",
         "Created and scheduled engaging social media posts",
         "Monitored social media trends and competitor activities",
         "Analyzed engagement metrics to improve content strategy",
+      ],
+    },
+    {
+      role: "Media Buyer",
+      company: "Ross Association",
+      location: "Remote",
+      type: "Full-time",
+      url: "https://rossandassociatesmbsp.com/",
+      responsibilities: [
+        "Managed media buying campaigns across multiple platforms",
+        "Negotiated and optimized advertising placements and costs",
+        "Analyzed campaign performance and ROI metrics",
+        "Developed strategic media plans to maximize client reach and engagement",
       ],
     },
   ];
@@ -168,7 +205,14 @@ export function Experience() {
                           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                             <div>
                               <h3 className="text-white mb-1">{exp.role}</h3>
-                              <div className="text-[#FFE500]">{exp.company}</div>
+                              <div className="text-[#FFE500] hover:text-[#FFD700] transition-colors cursor-pointer group/company" onClick={() => exp.url && window.open(exp.url, '_blank')}>
+                                <div className="flex items-center gap-2">
+                                  <span>{exp.company}</span>
+                                  {exp.url && (
+                                    <ExternalLink className="w-3 h-3 opacity-0 group-hover/company:opacity-100 transition-opacity" />
+                                  )}
+                                </div>
+                              </div>
                             </div>
                             <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFE500]/10 border border-[#FFE500]/20 text-sm text-[#FFE500] h-fit">
                               {exp.type}

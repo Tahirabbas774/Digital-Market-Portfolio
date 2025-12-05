@@ -5,9 +5,9 @@ import { useRef } from "react";
 export function Education() {
   const education = [
     {
-      degree: "Banking & Finance",
-      field: "Business & Finance",
-      institution: "Bahauddin Zakariya University",
+      degree: "Institute Of Banking & Finance ",
+      field: "Business & Marketing",
+      institution: "Bahauddin Zakariya University, Multan",
       year: "October 2024 - October 2026",
       description: "Pursuing advanced studies in Banking & Finance with focus on business finance principles.",
     },
@@ -19,11 +19,25 @@ export function Education() {
       description: "Completed Bachelor of Science degree with major in Chemistry.",
     },
     {
-      degree: "Digital Marketing Certification",
+      degree: "Meta Digital Marketing Certification",
       field: "Digital Marketing",
-      institution: "Digiskills",
+      institution: "Meta",
       year: "September 2023 - June 2024",
       description: "Comprehensive training in digital marketing strategies, social media marketing, and online advertising.",
+    },
+    {
+      degree: "Google Ads Certification",
+      field: "Google Ads",
+      institution: "Google",
+      year: "September 2023 - June 2024",
+      description: "Comprehensive training in Google Ads management, campaign optimization, and performance marketing.",
+    },
+    {
+      degree: "Microsoft Certified Digital Marketer",
+      field: "Digital Marketing",
+      institution: "Microsoft",
+      year: "September 2023 - June 2024",
+      description: "Comprehensive training in digital marketing strategies, analytics, and Microsoft marketing tools.",
     },
     {
       degree: "Google Ads Expert Certification",

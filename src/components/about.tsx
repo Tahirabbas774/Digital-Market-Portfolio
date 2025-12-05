@@ -71,7 +71,7 @@ export function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              {["Digital Marketing", "Social Media", "Facebook Ads", "Google Ads", "E-Commerce", "Content Creation"].map((skill, index) => (
+              {["Digital Marketing", "Social Media", "Facebook Ads", "Google Ads", "E-Commerce", "Content Creation" , "Search Engine Optimization" , "Business Consultation"].map((skill, index) => (
                 <motion.span
                   key={index}
                   className="px-4 py-2 bg-[#FFE500]/10 border border-[#FFE500]/30 text-[#FFE500] rounded-full text-sm"
