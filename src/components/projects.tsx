@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { projects as allProjects } from "../data/projects";
 
 // Get first 4 projects for the homepage featured section
-const projects = allProjects.slice(0, 4);
+const projects = allProjects.slice(0, 8);
 
 // Individual project card with scroll animation
 function ProjectCard({ project, index }: { project: any; index: number }) {
