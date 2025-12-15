@@ -118,7 +118,7 @@ export const projects: Project[] = [
   },
   {
     id: "healthcare-strategy",
-    title: "Healthcare Digital Strategy",
+    title: "Medical / Healthcare Digital Strategy",
     client: "Medical Practice Network",
     category: "SEO & Analytics",
     year: "2024",
@@ -151,7 +151,7 @@ export const projects: Project[] = [
   },
   {
     id: "b2b-lead-generation",
-    title: "B2B Lead Generation",
+    title: "Real eState B2B Lead Generation",
     client: "Enterprise Software Company",
     category: "B2B Marketing",
     year: "2023",
@@ -184,7 +184,7 @@ export const projects: Project[] = [
   },
   {
     id: "local-service-growth",
-    title: "Local Service Business Growth",
+    title: "Local SEO Business Growth",
     client: "Home Services Provider",
     category: "Local SEO & PPC",
     year: "2023",
@@ -217,7 +217,7 @@ export const projects: Project[] = [
   },
   {
     id: "fitness-app-launch",
-    title: "Fitness App Launch Campaign",
+    title: "GYM & Fitness Launch Campaign",
     client: "Mobile Fitness Startup",
     category: "App Marketing",
     year: "2024",
